@@ -72,25 +72,25 @@ It is your job to obtain the message in your lambda function. Then try to read t
 #### Step 2: Interpret the messages
 An added complexity is that we can not ensure all messages are in English. Use Amazon Comprehend to define wether the message is in English or not. If not, translate using Amazon translate.
 
-#### Step 3: Send a message to location A
+#### Step 3: Send a message to location "SQS"
 Location A is to Amazon SQS (Simple Queue Service). Only send the messages directed towards location A. The queue should be populated with messages, so that they are ready to be consumed by anyone who would need it. But that is none of your concern for now.
 
-#### Step 4: Location B
+#### Step 4: Location "Discord"
 Necessary: Discord account
 
 Create a new discord channel. Look into the discord documentation on how to send messages to a channel. Make sure you can explain how this mechanism works.
 
-#### Step 5: Location C
+#### Step 5: Location "Clickup"
 Necessary: Clickup account
 
 Create a clickup board and find out how to create tickets with the correct messages.
 
-#### Step 6: Location D
+#### Step 6: Location "SendGrid"
 Necessary: SendGrid account
 
 Route the correct messages from your lambda through EventBridge (make sure you can explain what this does). Use it to direct the messages to SendGrid and configure it so the message is sent to an email inbox of your choice.
 
-#### Step 7: Location E (Extra)
+#### Step 7: Location "Custom"
 Location E is grey zone in the jungle, they don't have a preferred way of communication so you have to play architect and decide for them. Integrate with an original platform/technology/application of your choice. Make it relevant and different from the others and make sure you can explain how you handled the integration. Bonus points for originality.
 
 ### Note
