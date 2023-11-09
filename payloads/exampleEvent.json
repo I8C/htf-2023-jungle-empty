@@ -9,6 +9,6 @@
     "resources": [ "TestResource" ],
     "detail": {
         "Message": "Let op de stropers komen jullie richting uit",
-        "Location": "Location A"
+        "Location": "SQS"
     }
 }
