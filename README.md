@@ -66,7 +66,7 @@ Our cipher is a simple mapping of each letter in the Latin alphabet. For example
 
 ### Steps
 #### Step 1: Obtain the messages and decipher
-The messages come in periodically. A message in ciphertext and the location you need to send it to will come to you from the MessageSender lambda through SendGrid, which will route them to your lambda function. 
+The messages come in periodically. A message in ciphertext and the location you need to send it to will come to you from the MessageSender lambda through EventBridge, which will route them to your lambda function. 
 It is your job to obtain the message in your lambda function. Then try to read the ciphertext in the DynamoDB and decipher the text so it becomes readable again.
 
 #### Step 2: Interpret the messages
