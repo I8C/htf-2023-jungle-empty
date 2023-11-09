@@ -2,7 +2,7 @@ const { EventBridgeClient, PutEventsCommand } = require('@aws-sdk/client-eventbr
 const { SQSClient, SendMessageCommand } = require('@aws-sdk/client-sqs');
 const { TranslateClient, TranslateTextCommand } = require('@aws-sdk/client-translate');
 const { ComprehendClient, DetectDominantLanguageCommand } = require('@aws-sdk/client-comprehend');
-const { DynamoDBClient, GetItemCommand, ScanCommand } = require('@aws-sdk/client-dynamodb');
+const { DynamoDBClient, ScanCommand } = require('@aws-sdk/client-dynamodb');
 const axios = require('axios');
 const AWSXRay = require('aws-xray-sdk-core');
 AWSXRay.captureHTTPsGlobal(require('http'));
