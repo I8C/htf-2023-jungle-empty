@@ -105,7 +105,7 @@ npm install
 cd ../..
 
 # Execute function locally (only if Docker is installed)
-sam local invoke MyLambda --event ./payloads/exampleMessage.json -t cfn-students.yaml
+sam local invoke MyLambda --event ./payloads/exampleEvent.json -t cfn-students.yaml
 
 # Deploy Project to AWS using bash
 bash deployStudent.sh
